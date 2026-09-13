@@ -6,6 +6,10 @@ RUN apt update && apt install -y --no-install-recommends \
     git \
     libxml2\
     libxslt1.1 \
+    openssh-client \
+    cmake \
+    build-essential \
+    libcublas-dev-11-8 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
@@ -20,8 +24,16 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pandas \
     python-dotenv \
     openai \
-    google-genai
+    google-genai \
+    playwright \
+    nest_asyncio \
+    tqdm \
+    duckduckgo_search
 
-RUN pip install --no-cache-dir \
-    llama-cpp-python \
-    --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu118
+ENV CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=50"
+ENV FORCE_CMAKE=1
+
+RUN pip install --no-cache-dir --no-binary llama-cpp-python llama-cpp-python
+
+RUN playwright install && \
+    playwright install-deps
