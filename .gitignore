@@ -1,2 +1,15 @@
 *.gguf
+
+*.json
+*.jsonl
+!.devcontainer.json
+!.devcontainer/devcontainer.json
+
+*.txt
+!prompt_sablonu.txt
+
+__pycache__/
+.ipynb_checkpoints/
 core
+
+*.html

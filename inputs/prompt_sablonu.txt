@@ -1,0 +1,20 @@
+Kullanıcı CV Özeti:
+{cv_metni}
+
+Şirket Sektör Bilgisi (Kayıtlı Ön Bilgi): {firma_tanitimi}
+Firma Hakkında (Web Sitesinden):
+{firma_metni}
+
+{ilan_metni}
+
+GÖREVLER:
+1. "kategori": Şirketin ana sektörünü belirle. Sistemde şu an bulunan kategoriler: [{mevcut_kategoriler}]. Şirket bunlardan birine uyuyorsa KESİNLİKLE onu kullan. Uymuyorsa yepyeni, kısa ve kapsayıcı bir kategori yarat.
+2. "ozet": Şirketin ne iş yaptığını web sitesi metnine bakarak en fazla 2 cümleyle özetle.
+3. "uygun_ilan_indeksleri": Yukarıda numaralandırılarak verilen "Bulunan İlanlar" listesini incele. Kullanıcının CV'sine uyan BİRDEN FAZLA ilan olabilir. Uyan TÜM ilanların SADECE NUMARALARINI bir liste olarak ver (Örn: [0, 1, 3] veya sadece [2]). Uyan hiçbir ilan yoksa veya ilan listesi boşsa [] döndür. LİNK YAZMA, SADECE NUMARA YAZ!
+
+SADECE aşağıdaki JSON şablonunu doldur ve çıktı ver. Başka hiçbir kelime kullanma.
+{{
+  "kategori": "Seçilen veya Yeni Kategori",
+  "ozet": "Şirket özeti...",
+  "uygun_ilan_indeksleri": [0, 1]
+}}

@@ -28,8 +28,9 @@ RUN pip install --no-cache-dir --upgrade pip && \
     playwright \
     nest_asyncio \
     tqdm \
-    duckduckgo_search
+    ddgs
 
+ENV GGML_CUDA=1
 ENV CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=50"
 ENV FORCE_CMAKE=1
 
