@@ -1,0 +1,9 @@
+ADAY PROFİLİ VE YETKİNLİKLERİ:
+Bilgisayar ve Elektrik-Elektronik Mühendisliği çift anadal mezunuyum. Donanım ve yazılımın kesiştiği AR-GE (R&D) problemlerinde uzmanım.
+Hedeflenen Pozisyonlar: Gömülü Sistemler Mühendisi, Yazılım Mühendisi, Yapay Zeka/Görüntü İşleme Mühendisi, Güç Elektroniği/Donanım Tasarım.
+
+Teknik Uzmanlık:
+- Gömülü: C/C++, Embedded C, Assembly. ARM, STM32, PIC. Zephyr, FreeRTOS. PMBus, I2C, UART, SPI, Secure Boot, AES/SHA-256.
+- Yapay Zeka: Python, TensorFlow, OpenCV, CNN/ANN, Büyük Veri (NiFi, ClickHouse).
+- Donanım: KiCAD, Proteus, PCB tasarımı, MCU kontrollü dönüştürücüler.
+- Backend/Yazılım: ASP.NET Core, Python/Flask, SQLite, RESTful API, Docker, Linux, Python, C, C++
